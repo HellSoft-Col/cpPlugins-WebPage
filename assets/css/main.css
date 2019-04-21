@@ -2,6 +2,108 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Taviraj:300,400,700,300i,400i,700i");
 
+
+/*  */
+
+
+#sec3 {
+    position: relative;
+    height:300px;
+    width:100%;
+    overflow: hidden;
+}
+#videobcg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    height:auto;
+    width:auto;
+    z-index: -100;
+}
+
+/*SCROLL BUTTON */
+.btn{
+
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.btn {
+	font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	text-transform: uppercase;
+	border-radius: 0; }
+
+
+.btn-circle {
+	font-size: 26px;
+	width: 50px;
+	height: 50px;
+	margin-top: 15px;
+	padding: 7px 0;
+	-webkit-transition: background .3s ease-in-out;
+	-moz-transition: background .3s ease-in-out;
+	transition: background .3s ease-in-out;
+	color: white;
+	border: 2px solid white;
+	border-radius: 100% !important;
+	background: transparent; }
+	.btn-circle:hover, .btn-circle:focus {
+	  color: white;
+	  outline: none;
+	  background: rgba(255, 255, 255, 0.1); }
+  
+
+/* OWN CONF*/
+/* Global */
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 2s steps(15) 1s 1 normal both,
+			 blinkTextCursor 500ms steps(15) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 7em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+/* TEMPLATED */
+
 /*
 	Transitive by TEMPLATED
 	templated.co @templatedco
@@ -4227,3 +4329,5 @@
 			}
 
 		}
+
+/* TEAM MEMBERS */
