@@ -494,7 +494,7 @@
 	}
 
 	.\34 u, .\34 u\24 {
-		width: 33.3333333333%;
+		width: 2033333%;
 		clear: none;
 		margin-left: 0;
 	}
@@ -561,7 +561,7 @@
 	}
 
 	.\-4u {
-		margin-left: 33.33333%;
+		margin-left: 20%;
 	}
 
 	.\-3u {
@@ -707,7 +707,7 @@
 		}
 
 		.\34 u\28xlarge\29, .\34 u\24\28xlarge\29 {
-			width: 33.3333333333%;
+			width: 2033333%;
 			clear: none;
 			margin-left: 0;
 		}
@@ -774,7 +774,7 @@
 		}
 
 		.\-4u\28xlarge\29 {
-			margin-left: 33.33333%;
+			margin-left: 20%;
 		}
 
 		.\-3u\28xlarge\29 {
@@ -922,7 +922,7 @@
 		}
 
 		.\34 u\28large\29, .\34 u\24\28large\29 {
-			width: 33.3333333333%;
+			width: 2033333%;
 			clear: none;
 			margin-left: 0;
 		}
@@ -989,7 +989,7 @@
 		}
 
 		.\-4u\28large\29 {
-			margin-left: 33.33333%;
+			margin-left: 20%;
 		}
 
 		.\-3u\28large\29 {
@@ -1137,7 +1137,7 @@
 		}
 
 		.\34 u\28medium\29, .\34 u\24\28medium\29 {
-			width: 33.3333333333%;
+			width: 2033333%;
 			clear: none;
 			margin-left: 0;
 		}
@@ -1204,7 +1204,7 @@
 		}
 
 		.\-4u\28medium\29 {
-			margin-left: 33.33333%;
+			margin-left: 20%;
 		}
 
 		.\-3u\28medium\29 {
@@ -1352,7 +1352,7 @@
 		}
 
 		.\34 u\28small\29, .\34 u\24\28small\29 {
-			width: 33.3333333333%;
+			width: 2033333%;
 			clear: none;
 			margin-left: 0;
 		}
@@ -1419,7 +1419,7 @@
 		}
 
 		.\-4u\28small\29 {
-			margin-left: 33.33333%;
+			margin-left: 20%;
 		}
 
 		.\-3u\28small\29 {
@@ -1567,7 +1567,7 @@
 		}
 
 		.\34 u\28xsmall\29, .\34 u\24\28xsmall\29 {
-			width: 33.3333333333%;
+			width: 2033333%;
 			clear: none;
 			margin-left: 0;
 		}
@@ -1634,7 +1634,7 @@
 		}
 
 		.\-4u\28xsmall\29 {
-			margin-left: 33.33333%;
+			margin-left: 20%;
 		}
 
 		.\-3u\28xsmall\29 {
@@ -3993,7 +3993,7 @@
 
 /* Flexgrid */
 
-	#flexgrid {
+	.flexgrid {
 		width: 100%;
 		margin: 0 0 2.5rem 0;
 		display: -moz-flex;
@@ -4010,7 +4010,7 @@
 		align-items: stretch;
 	}
 
-		#flexgrid > * {
+		.flexgrid > * {
 			-moz-flex-shrink: 1;
 			-webkit-flex-shrink: 1;
 			-ms-flex-shrink: 1;
@@ -4021,37 +4021,37 @@
 			flex-grow: 0;
 		}
 
-		#flexgrid > * {
-			width: 33.33333%;
+		.flexgrid > * {
+			width: 20%;
 		}
 
-		#flexgrid > * {
-			padding: 3rem;
-			width: calc(33.33333% + 2rem);
+		.flexgrid > * {
+			padding: 2rem;
+			width: calc(20% + -1rem);
 		}
 
-		#flexgrid > :nth-child(-n + 3) {
+		.flexgrid > :nth-child(-n + 5) {
 			padding-top: 0;
 		}
 
-		#flexgrid > :nth-last-child(-n + 3) {
+		.flexgrid > :nth-last-child(-n + 5) {
 			padding-bottom: 0;
 		}
 
-		#flexgrid > :nth-child(3n + 1) {
+		.flexgrid > :nth-child(5n + 1) {
 			padding-left: 0;
 		}
 
-		#flexgrid > :nth-child(3n) {
+		.flexgrid > :nth-child(5n) {
 			padding-right: 0;
 		}
 
-		#flexgrid > :nth-child(3n + 1),
-		#flexgrid > :nth-child(3n) {
-			width: calc(33.33333% + -1rem);
+		.flexgrid > :nth-child(5n + 1),
+		.flexgrid > :nth-child(5n) {
+			width: calc(20%, -1rem);
 		}
 
-		#flexgrid > div {
+		.flexgrid > div {
 			border-style: solid;
 			border-color: rgba(255, 255, 255, 0.25);
 			border-left-width: 1px;
@@ -4059,19 +4059,19 @@
 			text-align: center;
 		}
 
-			#flexgrid > div > :last-child {
+			.flexgrid > div > :last-child {
 				margin-bottom: 0;
 			}
 
-			#flexgrid > div:nth-child(3n - 2) {
+			.flexgrid > div:nth-child(5n - 4) {
 				border-left-width: 0;
 			}
 
-			#flexgrid > div:nth-child(-n + 3) {
+			.flexgrid > div:nth-child(-n + 5) {
 				border-top-width: 0;
 			}
 
-			#flexgrid > div .icon {
+			.flexgrid > div .icon {
 				display: -moz-flex;
 				display: -webkit-flex;
 				display: -ms-flex;
@@ -4095,111 +4095,111 @@
 
 		@media screen and (max-width: 980px) {
 
-			#flexgrid > * {
+			.flexgrid > * {
 				width: 100%;
 			}
 
-			#flexgrid > * {
+			.flexgrid > * {
 				padding: 2rem;
-				width: calc(33.33333% + 1.33333rem);
+				width: calc(20% + 1.33333rem);
 			}
 
-			#flexgrid > :nth-child(-n + 3) {
+			.flexgrid > :nth-child(-n + 5) {
 				padding-top: 2rem;
 			}
 
-			#flexgrid > :nth-last-child(-n + 3) {
+			.flexgrid > :nth-last-child(-n + 5) {
 				padding-bottom: 2rem;
 			}
 
-			#flexgrid > :nth-child(3n + 1) {
+			.flexgrid > :nth-child(5n + 1) {
 				padding-left: 2rem;
 			}
 
-			#flexgrid > :nth-child(3n) {
+			.flexgrid > :nth-child(5n) {
 				padding-right: 2rem;
 			}
 
-			#flexgrid > :nth-child(3n + 1),
-			#flexgrid > :nth-child(3n) {
+			.flexgrid > :nth-child(5n + 1),
+			.flexgrid > :nth-child(5n) {
 				padding: 2rem;
 				width: calc(100% + 4rem);
 			}
 
-			#flexgrid > * {
+			.flexgrid > * {
 				padding: 2rem;
 				width: calc(50% + 2rem);
 			}
 
-			#flexgrid > :nth-child(-n + 2) {
+			.flexgrid > :nth-child(-n + 2) {
 				padding-top: 2rem;
 			}
 
-			#flexgrid > :nth-last-child(-n + 2) {
+			.flexgrid > :nth-last-child(-n + 2) {
 				padding-bottom: 2rem;
 			}
 
-			#flexgrid > :nth-child(2n + 1) {
+			.flexgrid > :nth-child(2n + 1) {
 				padding-left: 2rem;
 			}
 
-			#flexgrid > :nth-child(2n) {
+			.flexgrid > :nth-child(2n) {
 				padding-right: 2rem;
 			}
 
-			#flexgrid > :nth-child(2n + 1),
-			#flexgrid > :nth-child(2n) {
+			.flexgrid > :nth-child(2n + 1),
+			.flexgrid > :nth-child(2n) {
 				padding: 2rem;
 				width: calc(100% + 4rem);
 			}
 
-			#flexgrid > * {
+			.flexgrid > * {
 				padding: 2rem;
 				width: calc(100% + 4rem);
 			}
 
-			#flexgrid > :nth-child(-n + 1) {
+			.flexgrid > :nth-child(-n + 1) {
 				padding-top: 0;
 			}
 
-			#flexgrid > :nth-last-child(-n + 1) {
+			.flexgrid > :nth-last-child(-n + 1) {
 				padding-bottom: 0;
 			}
 
-			#flexgrid > :nth-child(1n + 1) {
+			.flexgrid > :nth-child(1n + 1) {
 				padding-left: 0;
 			}
 
-			#flexgrid > :nth-child(1n) {
+			.flexgrid > :nth-child(1n) {
 				padding-right: 0;
 			}
 
-			#flexgrid > :nth-child(1n + 1),
-			#flexgrid > :nth-child(1n) {
+			.flexgrid > :nth-child(1n + 1),
+			.flexgrid > :nth-child(1n) {
 				width: calc(100% + 2rem);
 			}
 
-			#flexgrid > div:nth-child(2n - 1) {
+			.flexgrid > div:nth-child(2n - 1) {
 				border-left-width: 1px;
 			}
 
-			#flexgrid > div:nth-child(-n + 2) {
+			.flexgrid > div:nth-child(-n + 2) {
 				border-top-width: 1px;
 			}
 
-			#flexgrid > div:nth-child(-n + 3) {
+			.flexgrid > div:nth-child(-n + 5) {
 				border-top-width: 1px;
 			}
 
-			#flexgrid > div:nth-child(n) {
+			.flexgrid > div:nth-child(n) {
 				border-left-width: 0;
 			}
 
-			#flexgrid > div:nth-child(-n + 1) {
+			.flexgrid > div:nth-child(-n + 1) {
 				border-top-width: 0;
 			}
 
-			#flexgrid > div .icon {
+			.flexgrid > div .icon {
 				font-size: 2rem;
 				width: 6rem;
 				height: 6rem;
@@ -4331,3 +4331,51 @@
 		}
 
 /* TEAM MEMBERS */
+
+
+.hellsoft-member {
+	text-align: center
+}
+
+.hellsoft-member img {
+	width: 150px;
+	height: 150px;
+	display: block;
+	-o-object-fit: cover;
+	object-fit: cover;
+	border-radius: 50%;
+	margin: 0 auto
+}
+
+.hellsoft-member img.no-circle {
+	border-radius: 0
+}
+
+.separator2 {
+	position: relative;
+	width: 120px;
+	height: 30px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	background: url(../../images/separator-two.png) center center no-repeat;
+}
+
+/* MEMBERS 2 */
+
+
+.multiple-h-section {
+	grid-gap: 40px;
+	grid-auto-columns: 1fr;
+	grid-auto-flow: column
+}
+
+.grid,
+.multiple-h-section {
+	display: grid;
+	padding: 40px 160px
+}
+
+.grid {
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 40px
+}

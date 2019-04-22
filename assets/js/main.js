@@ -137,3 +137,15 @@
 	});
 
 })(jQuery);
+
+function showEstudiantes() {	
+	var x = document.getElementById("profesores");
+	x.style.display = "none";
+	$("#estudiantes").fadeIn("slow");
+}
+
+function showProfesores() {
+	var x = document.getElementById("estudiantes");
+	x.style.display = "none";
+	$("#profesores").fadeIn("slow");
+}
