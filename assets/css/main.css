@@ -1933,6 +1933,31 @@
 
 /* Button */
 
+.btn-group button {
+  background-color: #4CAF50; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
+
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
@@ -4021,14 +4046,14 @@
 			flex-grow: 0;
 		}
 
-		.flexgrid > * {
+		/*.flexgrid > * {
 			width: 20%;
-		}
+		}*/
 
-		.flexgrid > * {
+		/*.flexgrid > * {
 			padding: 2rem;
 			width: calc(20% + -1rem);
-		}
+		}*/
 
 		.flexgrid > :nth-child(-n + 5) {
 			padding-top: 0;
@@ -4358,6 +4383,14 @@
 	margin: 0 auto;
 	margin-bottom: 10px;
 	background: url(../../images/separator-two.png) center center no-repeat;
+}
+.separator3 {
+	position: relative;
+	width: 120px;
+	height: 30px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	background: url(../../images/separator-three.png) center center no-repeat;
 }
 
 /* MEMBERS 2 */

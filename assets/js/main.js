@@ -158,3 +158,55 @@ function showProfesores() {
 	x.style.display = "none";
 	$("#profesores").fadeIn("slow");
 }
+function showPlaneacion() {
+	var x = document.getElementById("anexos");
+	x.style.display = "none";
+	var y = document.getElementById("codigo");
+	x.style.display = "none";
+	$("#planeacion").fadeIn("slow");
+}
+function showAnexos() {
+	var x = document.getElementById("planeacion");
+	x.style.display = "none";
+	var y = document.getElementById("codigo");
+	x.style.display = "none";
+	$("#anexos").fadeIn("slow");
+}
+function showCodigo() {
+	var x = document.getElementById("planeacion");
+	x.style.display = "none";
+	var y = document.getElementById("anexos");
+	y.style.display = "none";
+	$("#codigo").fadeIn("slow");
+}
+function showSPMP() {
+	var x = document.getElementById("srs");
+	x.style.display = "none";
+	$("#spmp").fadeIn("slow");
+}
+function showSRS() {
+	var x = document.getElementById("spmp");
+	x.style.display = "none";
+	$("#srs").fadeIn("slow");
+}
+function showUsabilidad() {
+	var x = document.getElementById("extensibilidad");
+	x.style.display = "none";
+	var y = document.getElementById("portabilidad");
+	x.style.display = "none";
+	$("#usabilidad").fadeIn("slow");
+}
+function showExtensibilidad() {
+	var x = document.getElementById("usabilidad");
+	x.style.display = "none";
+	var y = document.getElementById("portabilidad");
+	x.style.display = "none";
+	$("#extensibilidad").fadeIn("slow");
+}
+function showPortabilidad() {
+	var x = document.getElementById("usabilidad");
+	x.style.display = "none";
+	var y = document.getElementById("extensibilidad");
+	y.style.display = "none";
+	$("#portabilidad").fadeIn("slow");
+}

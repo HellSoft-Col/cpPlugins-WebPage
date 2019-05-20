@@ -5,246 +5,417 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
 <html>
-	<head>
-		<title>cpPlugins 3.0</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-	</head>
-	<body>
 
-		<!-- Header -->
-			<header id="header" class="alt">
-				<div class="logo"><a href="index.html">cpPlugins 3.0<span>by HellSoft</span></a></div>
-				<a href="#menu" class="toggle"><span>Menu</span></a>
-			</header>
+<head>
+	<title>cpPlugins 3.0</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
 
-		<!-- Nav -->
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="#banner">Home</a></li>
-					<li><a href="#abstract">Abstract</a></li>
-					<li><a href="#problem">Problemática</a></li>
-					<li><a href="#solution">Solución</a></li>
-					<li><a href="#objetivos">Objetivos</a></li>
-					<li><a href="#documentos">Documentación</a></li>
-					<li><a href="#group">Equipo de trabajo</a></li>
-				</ul>
-			</nav>
+<body>
 
-		<!-- Banner -->
-		<!--
+	<!-- Header -->
+	<header id="header" class="alt">
+		<div class="logo"><a href="index.html">cpPlugins 3.0<span>by HellSoft</span></a></div>
+		<a href="#menu" class="toggle"><span>Menu</span></a>
+	</header>
+
+	<!-- Nav -->
+	<nav id="menu">
+		<ul class="links">
+			<li><a href="#banner">Home</a></li>
+			<li><a href="#problematica">Problemática</a></li>
+			<li><a href="#objetivos">Objetivos</a></li>
+			<li><a href="#documentos">Documentación</a></li>
+			<li><a href="#group">Equipo de trabajo</a></li>
+		</ul>
+	</nav>
+
+	<!-- Banner -->
+	<!--
 			To use a video as your background, set data-video to the name of your video without
 			its extension (eg. images/banner). Your video must be available in both .mp4 and .webm
 			formats to work correctly.
 		-->
-			<section id="banner" data-video="images/banner">
-				<div class="inner">
-					<h1 class="line-1 anim-typewriter">cpPlugins 3.0</h1>
-					<p>Toolkit modular para procesamiento y visualización de datos médicos</p>
-					
-					<a href="#one" class="btn btn-circle scrolly">
-						<i class="fa fa-angle-double-down animated"></i>
-					</a>
-				</div>
-			</section>
+	<section id="banner" data-video="images/banner">
+		<div class="inner">
+			<h1 class="line-1 anim-typewriter">cpPlugins 3.0</h1>
+			<p>Toolkit modular para procesamiento y visualización de datos médicos</p>
 
-		<!-- Objetivos -->
-			<section id="one" class="wrapper style2">
-				<div class="inner">
-					<div>
-						<div class="box">
-							<div class="content">
-								<header class="align-center">
-									<h2>Objetivos</h2>
-								</header>
-								<hr />
-								<p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada. Praesent in sem ex. Morbi mattis sapien pretium tellus venenatis, at egestas urna ornare.</p>
-								<p>Vivamus fermentum nibh vel pharetra blandit. Cras a purus urna. Sed et libero ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse id hendrerit felis. Nulla viverra tempor dui at congue. Pellentesque quis nulla ornare, congue nisi id, finibus nulla. Aliquam sit amet hendrerit purus. Donec libero massa, posuere fermentum eros sit amet, maximus fringilla augue. Maecenas at rhoncus lorem. Vivamus ultricies consequat est, efficitur convallis libero. Vivamus rutrum semper mauris, vitae consequat eros tempor ac. Pellentesque et ornare sapien</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-		<!-- Miembros del equipo -->
-			<section id="group" class="wrapper style3" >
-				<div class="inner">
+			<a href="#one" class="btn btn-circle scrolly">
+				<i class="fa fa-angle-double-down animated"></i>
+			</a>
+		</div>
+	</section>
+	<!-- Problemática -->
+	<section id="problemática" class="wrapper style2">
+		<div class="inner">
+			<div>
+				<div class="box">
+					<div class="content">
 						<header class="align-center">
-								<h2>Miembros del equipo</h2>
-							</header>
-							<div class="separator2"></div>
-				</div>
-				
-				<div class="inner">
-						<ul class="actions fit">
-	
-								<li><a onclick="showEstudiantes()" class="button alt fit">Estudiantes</a></li>
-								<li><a onclick="showProfesores()" class="button alt fit">Profesores</a></li>
+							<h2>Problemática</h2>
+						</header>
+						<div class="separator3"></div>
+						<div class="inner">
+							<ul class="actions fit">
+
+								<li><a onclick="showUsabilidad()" class="button alt fit">Usabilidad</a></li>
+								<li><a onclick="showExtensibilidad()" class="button alt fit">Extensibilidad</a></li>
+								<li><a onclick="showPortabilidad()" class="button alt fit">Portabilidad</a></li>
 							</ul>
-					<div id="estudiantes" class="flexgrid">
-
-						<div class="hellsoft-member">
-							<img src="images/members/pabli.jpeg" alt="Leo">
-							<br>
-							<header>
-								<h3>Pablo Ariza</h3>
-								<h5>Estudiante ingeniería de sistemas</h5>
-							</header>
-							<p>Integrante proyecto de grado</p>
-							<a href="mailto:pablo_ariza@javeriana.edu.co">pablo_ariza@javeriana.edu.co</a>
-						</div>
-						<div class="hellsoft-member">
-							<img src="images/members/carlos.jpeg" alt="Leo">
-							<br>
-							<header>
-								<h3>Carlos Barón</h3>
-								<h5>Estudiante ingeniería de sistemas</h5>
-							</header>
-							<p>Integrante proyecto de grado</p>
-							<a href="mailto:mail@javeriana.edu.co">baron_carlos@javeriana.edu.co</a>
-						</div>
-						<div class="hellsoft-member">
-							<img src="images/members/chaustre.jpeg" alt="Leo">
-							<br>
-							<header>
-								<h3>Santiago Chaustre</h3>
-								<h5>Estudiante ingeniería de sistemas</h5>
-							</header>
-							<p>Integrante proyecto de grado</p>
-							<a href="mailto:santiago-chaustre@javeriana.edu.co">santiago-chaustre@javeriana.edu.co</a>
-						</div>
-
-						<div class="hellsoft-member">
-							<img src="images/members/cucu.jpeg" alt="Leo">
-							<br>
-							<header>
-								<h3>Andrés Cocunubo</h3>
-								<h5>Estudiante ingeniería de sistemas</h5>
-							</header>
-							<p>Integrante proyecto de grado</p>
-							<a href="mailto:andres-coconubo@javeriana.edu.co">andres-coconubo@javeriana.edu.co</a>
-						</div>
-
-						<div class="hellsoft-member">
-							<img src="images/members/ailin.jpg" alt="Leo">
-							<br>
-							<header>
-								<h3>Ailín Rojas</h3>
-								<h5>Estudiante ingeniería de sistemas</h5>
-							</header>
-							<p>Integrante proyecto de grado</p>
-							<a href="mailto:ailin.rojas@javeriana.edu.co">ailin.rojas@javeriana.edu.co</a>
-						</div>
-						
-					</div>
-					
-					<div id="profesores" class="multiple-h-section align-center"  style="display: none;">
-
-							<article class="hellsoft-member">
-								<img src="images/members/leo.png" alt="Leo">
-								<br>
-								<header>
-									<h3>Leonardo Flórez</h3>
-									<h5>Doctor philosophiæ</h5>
-								</header>
-								<p>Director de trabajo de grado</p>
-								<a href="mailto:florez-l@javeriana.edu.co">florez-l@javeriana.edu.co</a>
-							</article>
-							<article class="hellsoft-member">
-								<img src="images/members/jaime.jpeg" alt="Leo">
-								<br>
-								<header>
-									<h3>Jaime Pavlich</h3>
-									<h5>Doctor philosophiæ</h5>
-								</header>
-								<p>Asesor de trabajo de grado</p>
-								<a href="mailto:jpavlich@javeriana.edu.co">jpavlich@javeriana.edu.co</a>
-							</article>
-							
-							
-						</div>
-						
-
-				</div>
-			</section>
-
-		<!-- Three -->
-			<section id="three" class="wrapper style2">
-				<div class="inner">
-					<div class="grid-style">
-
-						<div>
-							<div class="box">
-								<div class="image fit">
-									<img src="images/pic02.jpg" alt="" />
-								</div>
-								<div class="content">
-									<header class="align-center">
-										<h2>Lorem ipsum dolor</h2>
-										<p>maecenas feugiat ex purus, quis volutpat lacus placerat</p>
-									</header>
-									<hr />
-									<p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada. Praesent in sem ex. Morbi mattis sapien pretium tellus venenatis, at egestas urna ornare.</p>
-								</div>
+							<div id="usabilidad" class="flexgrid" style="display: none;">
+								<ul>
+									<li>
+										<p>Herramientas de uso privado, rígidas y sesgadas a intereses de las compañías.
+										</p>
+									</li>
+									<li>
+										<p>Se necesita un nivel intermedio-avanzado de programación para usar las
+											herramientas de código abierto, como ITK y VTK.</p>
+									</li>
+									<li>
+										<p>Algunas de las aplicaciones de software libre limitan a los usuarios a las
+											características que estas mismas ofrecen.</p>
+									</li>
+								</ul>
+							</div>
+							<div id="extensibilidad" class="flexgrid" style="display: none;">
+								<ul>
+									<li>
+										<p>Algunas de las aplicaciones de software libre, dificultan el desarrollo e
+											integración de nuevos algoritmos a su sistema.</p>
+									</li>
+									<li>
+										<p>Existen muchos algoritmos de procesamiento de imágenes, para diferentes fines
+											y no existe una unificación entre ellos.</p>
+									</li>
+								</ul>
+							</div>
+							<div id="portabilidad" class="flexgrid" style="display: none;">
+								<ul>
+									<li>
+										<p>Todas aplicaciones están sesgada a un ambiente de escritorio muy específico.</p>
+									</li>
+									<li>
+										<p>Para la realización de análisis sobre imágenes médicas se necesitan máquinas costosas, las cuales son la única alternativa para ejecutar este aplicativo.</p>
+									</li>
+								</ul>
 							</div>
 						</div>
-
-						<div>
-							<div class="box">
-								<div class="image fit">
-									<img src="images/pic03.jpg" alt="" />
-								</div>
-								<div class="content">
-									<header class="align-center">
-										<h2>Vestibulum sit amet</h2>
-										<p>mattis sapien pretium tellus venenatis</p>
-									</header>
-									<hr />
-									<p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada. Praesent in sem ex. Morbi mattis sapien pretium tellus venenatis, at egestas urna ornare.</p>
-								</div>
-							</div>
-						</div>
-
+						<hr>
+						<h3 style="text-align: center;">Pregunta generadora</h3>
+						<p> “¿Como hacer una herramienta flexible, que permita a un usuario sin conocimientos de
+							programación, reali-zar procesamientos de flujo de datos estructurados?”</p>
 					</div>
 				</div>
-			</section>
+			</div>
+		</div>
+	</section>
 
-		<!-- Four -->
-			<section id="four" class="wrapper style3">
-				<div class="inner">
+	<!-- Objetivos -->
+	<section id="objetivos" class="wrapper style2">
+		<div class="inner">
+			<div>
+				<div class="box">
+					<div class="content">
+						<header class="align-center">
+							<h2>Objetivos</h2>
+						</header>
+						<div class="separator3"></div>
+						<hr>
+						<h3 style="text-align: center;">Objetivo general</h3>
+						<p> Diseñar y desarrollar una aplicación, basada en una versión anterior de cpPlugins, que
+							proporcione a los usuarios una interfaz “drag and drop”, con el fin de procesar y visualizar
+							datos médicos estructurados.</p>
+						<hr>
+						<h3 style="text-align: center;">Objetivos específicos</h3>
+						<ul>
+							<li>
+								<p>Elaborar la arquitectura de cpPlugins 3.0 para identificar los puntos extensibles.
+								</p>
+							</li>
+							<li>
+								<p>Desarrollar un cliente web para acceder a la funcionalidad de cpPlugins 3.0 de manera
+									ligera en diferentes plataformas.</p>
+							</li>
+							<li>
+								<p>Identificar atributos de calidad para determinar los recursos físicos que harán parte
+									del sistema.</p>
+							</li>
+							<li>
+								<p>Validar con el usuario final las funcionalidades del sistema, brindando un conjunto
+									de algoritmos para el procesamiento de datos médicos estructurados.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-					<header class="align-center">
-						<h2>Morbi interdum mollis sapien</h2>
-						<p>Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada. Praesent in sem ex. Morbi mattis sapien pretium tellus venenatis, at egestas urna ornare.</p>
+	<!-- Documentos -->
+	<section id="documentos" class="wrapper style2">
+		<div class="inner">
+			<div>
+				<div class="box">
+					<div class="content">
+						<header class="align-center">
+							<h2>Documentos</h2>
+						</header>
+						<div class="separator3"></div>
+						<p style=text-align:center;> A continuación, se presentan los entregables que soportan la
+							elaboración del proyecto.</p>
+						<div class="inner">
+							<ul class="actions fit">
+
+								<li><a onclick="showPlaneacion()" class="button alt fit">Planeación</a></li>
+								<li><a onclick="showAnexos()" class="button alt fit">Anexos</a></li>
+								<li><a onclick="showCodigo()" class="button alt fit">Código fuente</a></li>
+							</ul>
+							<div id="planeacion" class="flexgrid" style="display: none;">
+								<ul class="actions fit">
+									<li><a href="files/Propuesta_cpPlugins3.0.pdf" target="_blank"
+											class="button icon fa-file-pdf-o fit">Propuesta</a></li>
+									<li><a href="files/Poster_cpPlugins3.0.pdf" target="_blank"
+											class="button icon fa-file-pdf-o fit">Poster</a></li>
+									<li><a href="files/SPMP_cpPlugins3.0.pdf" target="_blank"
+											class="button icon fa-file-pdf-o fit">SPMP</a></li>
+									<li><a href="files/SRS_cpPlugins3.0.docx" target="_blank"
+											class="button icon fa-file-word-o fit">SRS</a></li>
+								</ul>
+
+							</div>
+							<div id="anexos" class="flexgrid" style="display: none;">
+								<ul class="actions fit">
+
+									<li><a onclick="showSPMP()" class="button alt fit">SPMP</a></li>
+									<li><a onclick="showSRS()" class="button alt fit">SRS</a></li>
+
+								</ul>
+								<div id="spmp" class="flexgrid" style="display: none;">
+									<ul class="actions fit">
+										<li><a href="files/2.Riesgos.xlsx" target="_blank"
+												class="button fa-file-excel-o fit">Análisis de riesgos</a></li>
+										<li><a href="files/3.Procesodeintegracion.png" target="_blank"
+												class="button icon fa-picture-o fit">Proceso de integración</a></li>
+									</ul>
+								</div>
+								<div id="srs" class="flexgrid" style="display: none;">
+									<ul class="actions fit">
+										<li><a href="files/2.Requisitos.xlsx" target="_blank"
+												class="button icon fa-file-excel-o fit">Especiicación de requisitos</a>
+										</li>
+									</ul>
+
+								</div>
+
+
+							</div>
+							<div id="codigo" class="flexgrid" style="display: none;">
+								<ul class="actions fit">
+									<li><a href="#" target="_blank" class="button icon fa-gitlab fit">Cliente</a></li>
+									<li><a href="#" target="_blank" class="button icon fa-gitlab fit">Servidor</a></li>
+								</ul>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Miembros del equipo -->
+	<section id="group" class="wrapper style3">
+		<div class="inner">
+			<header class="align-center">
+				<h2>Miembros del equipo</h2>
+			</header>
+			<div class="separator2"></div>
+		</div>
+
+		<div class="inner">
+			<ul class="actions fit">
+
+				<li><a onclick="showEstudiantes()" class="button alt fit">Estudiantes</a></li>
+				<li><a onclick="showProfesores()" class="button alt fit">Profesores</a></li>
+			</ul>
+			<div id="estudiantes" class="flexgrid">
+
+				<div class="hellsoft-member">
+					<img src="images/members/pabli.jpeg" alt="Leo">
+					<br>
+					<header>
+						<h3>Pablo Ariza</h3>
+						<h5>Estudiante ingeniería de sistemas</h5>
 					</header>
-
+					<p>Integrante proyecto de grado</p>
+					<a href="mailto:pablo_ariza@javeriana.edu.co">pablo_ariza@javeriana.edu.co</a>
 				</div>
-			</section>
+				<div class="hellsoft-member">
+					<img src="images/members/carlos.jpeg" alt="Leo">
+					<br>
+					<header>
+						<h3>Carlos Barón</h3>
+						<h5>Estudiante ingeniería de sistemas</h5>
+					</header>
+					<p>Integrante proyecto de grado</p>
+					<a href="mailto:baron_carlos@javeriana.edu.co">baron_carlos@javeriana.edu.co</a>
+				</div>
+				<div class="hellsoft-member">
+					<img src="images/members/chaustre.jpeg" alt="Leo">
+					<br>
+					<header>
+						<h3>Santiago Chaustre</h3>
+						<h5>Estudiante ingeniería de sistemas</h5>
+					</header>
+					<p>Integrante proyecto de grado</p>
+					<a href="mailto:santiago-chaustre@javeriana.edu.co">santiago-chaustre@javeriana.edu.co</a>
+				</div>
 
-		<!-- Equipo de trabajo -->
+				<div class="hellsoft-member">
+					<img src="images/members/cucu.jpeg" alt="Leo">
+					<br>
+					<header>
+						<h3>Andrés Cocunubo</h3>
+						<h5>Estudiante ingeniería de sistemas</h5>
+					</header>
+					<p>Integrante proyecto de grado</p>
+					<a href="mailto:andres-coconubo@javeriana.edu.co">andres-coconubo@javeriana.edu.co</a>
+				</div>
+
+				<div class="hellsoft-member">
+					<img src="images/members/ailin.jpg" alt="Leo">
+					<br>
+					<header>
+						<h3>Ailín Rojas</h3>
+						<h5>Estudiante ingeniería de sistemas</h5>
+					</header>
+					<p>Integrante proyecto de grado</p>
+					<a href="mailto:ailin.rojas@javeriana.edu.co">ailin.rojas@javeriana.edu.co</a>
+				</div>
+
+			</div>
+
+			<div id="profesores" class="multiple-h-section align-center" style="display: none;">
+
+				<article class="hellsoft-member">
+					<img src="images/members/leo.png" alt="Leo">
+					<br>
+					<header>
+						<h3>Leonardo Flórez</h3>
+						<h5>Doctor philosophiæ</h5>
+					</header>
+					<p>Director de trabajo de grado</p>
+					<a href="mailto:florez-l@javeriana.edu.co">florez-l@javeriana.edu.co</a>
+				</article>
+				<article class="hellsoft-member">
+					<img src="images/members/jaime.jpeg" alt="Leo">
+					<br>
+					<header>
+						<h3>Jaime Pavlich</h3>
+						<h5>Doctor philosophiæ</h5>
+					</header>
+					<p>Asesor de trabajo de grado</p>
+					<a href="mailto:jpavlich@javeriana.edu.co">jpavlich@javeriana.edu.co</a>
+				</article>
 
 
-		
-			<!-- Footer -->
-		<footer id="footer" class="wrapper">
-				<div class="inner">
-		
-					<div class="copyright">
-						&copy; cpPlugins: <a href="https://templated.co/">inspired in TEMPLATED</a>. 
+			</div>
+
+
+		</div>
+	</section>
+
+	<!-- Three -->
+	<section id="three" class="wrapper style2">
+		<div class="inner">
+			<div class="grid-style">
+
+				<div>
+					<div class="box">
+						<div class="image fit">
+							<img src="images/pic02.jpg" alt="" />
+						</div>
+						<div class="content">
+							<header class="align-center">
+								<h2>Lorem ipsum dolor</h2>
+								<p>maecenas feugiat ex purus, quis volutpat lacus placerat</p>
+							</header>
+							<hr />
+							<p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit
+								amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex
+								purus, quis volutpat lacus placerat malesuada. Praesent in sem ex. Morbi mattis sapien
+								pretium tellus venenatis, at egestas urna ornare.</p>
+						</div>
 					</div>
 				</div>
-			</footer>
 
-		<!-- Scripts -->
-		
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+				<div>
+					<div class="box">
+						<div class="image fit">
+							<img src="images/pic03.jpg" alt="" />
+						</div>
+						<div class="content">
+							<header class="align-center">
+								<h2>Vestibulum sit amet</h2>
+								<p>mattis sapien pretium tellus venenatis</p>
+							</header>
+							<hr />
+							<p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit
+								amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex
+								purus, quis volutpat lacus placerat malesuada. Praesent in sem ex. Morbi mattis sapien
+								pretium tellus venenatis, at egestas urna ornare.</p>
+						</div>
+					</div>
+				</div>
 
-	</body>
+			</div>
+		</div>
+	</section>
+
+	<!-- Four -->
+	<section id="four" class="wrapper style3">
+		<div class="inner">
+
+			<header class="align-center">
+				<h2>Morbi interdum mollis sapien</h2>
+				<p>Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor
+					velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat
+					lacus placerat malesuada. Praesent in sem ex. Morbi mattis sapien pretium tellus venenatis, at
+					egestas urna ornare.</p>
+			</header>
+
+		</div>
+	</section>
+
+	<!-- Equipo de trabajo -->
+
+
+
+	<!-- Footer -->
+	<footer id="footer" class="wrapper">
+		<div class="inner">
+
+			<div class="copyright">
+				&copy; cpPlugins: <a href="https://templated.co/">inspired in TEMPLATED</a>.
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
