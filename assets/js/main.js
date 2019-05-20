@@ -6,11 +6,11 @@
 $("a[href^='#']").click(function (e) {
 	e.preventDefault();
 
-	let position = $($(this).attr("href")).offset().top;
+	var position = $($(this).attr("href")).offset().top;
 
 	$("body, html").animate({
 		scrollTop: position
-	} /* speed */ );
+	} /* speed */);
 });
 
 (function ($) {
@@ -265,7 +265,7 @@ function showUsabilidad() {
 	let x = document.getElementById("extensibilidad");
 	x.style.display = "none";
 	let y = document.getElementById("portabilidad");
-	x.style.display = "none";
+	y.style.display = "none";
 	$("#usabilidad").fadeIn("slow");
 }
 
@@ -281,7 +281,7 @@ function showExtensibilidad() {
 	let x = document.getElementById("usabilidad");
 	x.style.display = "none";
 	let y = document.getElementById("portabilidad");
-	x.style.display = "none";
+	y.style.display = "none";
 	$("#extensibilidad").fadeIn("slow");
 }
 
