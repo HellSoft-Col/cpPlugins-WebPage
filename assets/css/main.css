@@ -5,6 +5,12 @@
 
 /*  */
 
+#objetivos h3,
+#objetivos h1,
+#objetivos h2,
+#objetivos h3 {
+	color: #000;
+}
 
 #sec3 {
     position: relative;
@@ -2097,7 +2103,7 @@
 			.button.alt:hover {
 				background-color: rgba(144, 144, 144, 0.075);
 			}
-
+			
 			input[type="submit"].alt:active,
 			input[type="reset"].alt:active,
 			input[type="button"].alt:active,
@@ -3054,7 +3060,8 @@
 					.wrapper.style2 input[type="reset"].alt:hover,
 					.wrapper.style2 input[type="button"].alt:hover,
 					.wrapper.style2 button.alt:hover,
-					.wrapper.style2 .button.alt:hover {
+					.wrapper.style2 .button.alt:hover,
+					.wrapper.style2 .button.alt.active {
 						background-color: rgba(0, 0, 0, 0.075);
 					}
 
@@ -3237,7 +3244,7 @@
 			}
 
 			.wrapper.style3 hr {
-				border-bottom-color: rgba(255, 255, 255, 0.25);
+				border-bottom-color: rgba(0, 0, 0, 0.15);
 			}
 
 			.wrapper.style3 .box {
@@ -3283,7 +3290,8 @@
 					.wrapper.style3 input[type="reset"].alt:hover,
 					.wrapper.style3 input[type="button"].alt:hover,
 					.wrapper.style3 button.alt:hover,
-					.wrapper.style3 .button.alt:hover {
+					.wrapper.style3 .button.alt:hover,
+					.wrapper.style3 .button.alt.active {
 						background-color: rgba(255, 255, 255, 0.075);
 					}
 
@@ -4359,7 +4367,8 @@
 
 
 .hellsoft-member {
-	text-align: center
+	text-align: center;
+	padding: 1%;
 }
 
 .hellsoft-member img {

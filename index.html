@@ -50,7 +50,7 @@
 		</div>
 	</section>
 	<!-- Problemática -->
-	<section id="problemática" class="wrapper style2">
+	<section id="problematica" class="wrapper style2">
 		<div class="inner">
 			<div>
 				<div class="box">
@@ -62,11 +62,11 @@
 						<div class="inner">
 							<ul class="actions fit">
 
-								<li><a onclick="showUsabilidad()" class="button alt fit">Usabilidad</a></li>
-								<li><a onclick="showExtensibilidad()" class="button alt fit">Extensibilidad</a></li>
-								<li><a onclick="showPortabilidad()" class="button alt fit">Portabilidad</a></li>
+								<li><a id="butt_usabilidad" onclick="showUsabilidad()" class="button alt fit active">Usabilidad</a></li>
+								<li><a id="butt_extensibilidad" onclick="showExtensibilidad()" class="button alt fit">Extensibilidad</a></li>
+								<li><a id="butt_portabilidad" onclick="showPortabilidad()" class="button alt fit">Portabilidad</a></li>
 							</ul>
-							<div id="usabilidad" class="flexgrid" style="display: none;">
+							<div id="usabilidad" class="flexgrid" >
 								<ul>
 									<li>
 										<p>Herramientas de uso privado, rígidas y sesgadas a intereses de las compañías.
@@ -116,7 +116,7 @@
 	</section>
 
 	<!-- Objetivos -->
-	<section id="objetivos" class="wrapper style2">
+	<section id="objetivos" class="wrapper style3">
 		<div class="inner">
 			<div>
 				<div class="box">
@@ -125,13 +125,13 @@
 							<h2>Objetivos</h2>
 						</header>
 						<div class="separator3"></div>
-						<hr>
 						<h3 style="text-align: center;">Objetivo general</h3>
+						<hr>
 						<p> Diseñar y desarrollar una aplicación, basada en una versión anterior de cpPlugins, que
 							proporcione a los usuarios una interfaz “drag and drop”, con el fin de procesar y visualizar
 							datos médicos estructurados.</p>
-						<hr>
-						<h3 style="text-align: center;">Objetivos específicos</h3>
+							<h3 style="text-align: center;">Objetivos específicos</h3>
+							<hr>
 						<ul>
 							<li>
 								<p>Elaborar la arquitectura de cpPlugins 3.0 para identificar los puntos extensibles.
@@ -171,11 +171,11 @@
 						<div class="inner">
 							<ul class="actions fit">
 
-								<li><a onclick="showPlaneacion()" class="button alt fit">Planeación</a></li>
-								<li><a onclick="showAnexos()" class="button alt fit">Anexos</a></li>
-								<li><a onclick="showCodigo()" class="button alt fit">Código fuente</a></li>
+								<li><a id="butt_planeacion" onclick="showPlaneacion()" class="button alt fit active">Planeación</a></li>
+								<li><a id="butt_anexos" onclick="showAnexos()" class="button alt fit">Anexos</a></li>
+								<li><a id="butt_codigofuente" onclick="showCodigo()" class="button alt fit">Código fuente</a></li>
 							</ul>
-							<div id="planeacion" class="flexgrid" style="display: none;">
+							<div id="planeacion" class="flexgrid" >
 								<ul class="actions fit">
 									<li><a href="files/Propuesta_cpPlugins3.0.pdf" target="_blank"
 											class="button icon fa-file-pdf-o fit">Propuesta</a></li>
@@ -191,8 +191,8 @@
 							<div id="anexos" class="flexgrid" style="display: none;">
 								<ul class="actions fit">
 
-									<li><a onclick="showSPMP()" class="button alt fit">SPMP</a></li>
-									<li><a onclick="showSRS()" class="button alt fit">SRS</a></li>
+									<li><a id="butt_spmp" onclick="showSPMP()" class="button alt fit active">SPMP</a></li>
+									<li><a id="butt_srs" onclick="showSRS()" class="button alt fit">SRS</a></li>
 
 								</ul>
 								<div id="spmp" class="flexgrid" style="display: none;">
@@ -216,8 +216,8 @@
 							</div>
 							<div id="codigo" class="flexgrid" style="display: none;">
 								<ul class="actions fit">
-									<li><a href="#" target="_blank" class="button icon fa-gitlab fit">Cliente</a></li>
-									<li><a href="#" target="_blank" class="button icon fa-gitlab fit">Servidor</a></li>
+									<li><a href="https://gitlab.com/hellsoft-colombia/cpplugins-3.0-client" target="_blank" class="button icon fa-gitlab fit">Cliente</a></li>
+									<li><a href="https://gitlab.com/hellsoft-colombia/cpplugins-3.0-server" target="_blank" class="button icon fa-gitlab fit">Servidor</a></li>
 								</ul>
 
 							</div>
@@ -241,8 +241,8 @@
 		<div class="inner">
 			<ul class="actions fit">
 
-				<li><a onclick="showEstudiantes()" class="button alt fit">Estudiantes</a></li>
-				<li><a onclick="showProfesores()" class="button alt fit">Profesores</a></li>
+				<li><a id="butt_estudiantes" onclick="showEstudiantes()" class="button alt fit active">Estudiantes</a></li>
+				<li><a id="butt_profesores" onclick="showProfesores()" class="button alt fit">Profesores</a></li>
 			</ul>
 			<div id="estudiantes" class="flexgrid">
 
@@ -307,8 +307,7 @@
 					<img src="images/members/leo.png" alt="Leo">
 					<br>
 					<header>
-						<h3>Leonardo Flórez</h3>
-						<h5>Doctor philosophiæ</h5>
+						<h3>Leonardo Flórez Ph. D</h3>
 					</header>
 					<p>Director de trabajo de grado</p>
 					<a href="mailto:florez-l@javeriana.edu.co">florez-l@javeriana.edu.co</a>
@@ -317,8 +316,7 @@
 					<img src="images/members/jaime.jpeg" alt="Leo">
 					<br>
 					<header>
-						<h3>Jaime Pavlich</h3>
-						<h5>Doctor philosophiæ</h5>
+						<h3>Jaime Pavlich Ph. D</h3>
 					</header>
 					<p>Asesor de trabajo de grado</p>
 					<a href="mailto:jpavlich@javeriana.edu.co">jpavlich@javeriana.edu.co</a>

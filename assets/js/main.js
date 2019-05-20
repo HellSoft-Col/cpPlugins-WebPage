@@ -6,7 +6,7 @@
 $("a[href^='#']").click(function(e) {
 	e.preventDefault();
 	
-	var position = $($(this).attr("href")).offset().top;
+	let position = $($(this).attr("href")).offset().top;
 
 	$("body, html").animate({
 		scrollTop: position
@@ -25,7 +25,7 @@ $("a[href^='#']").click(function(e) {
 
 	$(function() {
 
-		var	$window = $(window),
+		let	$window = $(window),
 			$body = $('body'),
 			$header = $('#header'),
 			$banner = $('#banner');
@@ -77,7 +77,7 @@ $("a[href^='#']").click(function(e) {
 
 						$window.on('resize', function() {
 
-							var wh = $window.height() * 0.60,
+							let wh = $window.height() * 0.60,
 								bh = $banner.height();
 
 							$banner.css('height', 'auto');
@@ -98,7 +98,7 @@ $("a[href^='#']").click(function(e) {
 					}
 
 				// Video check.
-					var video = $banner.data('video');
+					let video = $banner.data('video');
 
 					if (video)
 						$window.on('load.banner', function() {
@@ -123,7 +123,7 @@ $("a[href^='#']").click(function(e) {
 		// Scrolly.
 			if ( $( ".scrolly" ).length ) {
 
-				var $height = $('#header').height() * 0.95;
+				let $height = $('#header').height() * 0.95;
 
 				$('.scrolly').scrolly({
 					offset: $height
@@ -147,66 +147,139 @@ $("a[href^='#']").click(function(e) {
 
 })(jQuery);
 
-function showEstudiantes() {	
-	var x = document.getElementById("profesores");
+function showEstudiantes() {
+	let butt_estudiantes = document.getElementById("butt_estudiantes");
+	let butt_profesores = document.getElementById("butt_profesores");
+
+	butt_estudiantes.classList.add("active");		
+	butt_profesores.classList.remove("active");	
+
+	let x = document.getElementById("profesores");
 	x.style.display = "none";
 	$("#estudiantes").fadeIn("slow");
 }
 
 function showProfesores() {
-	var x = document.getElementById("estudiantes");
+	let butt_estudiantes = document.getElementById("butt_estudiantes");
+	let butt_profesores = document.getElementById("butt_profesores");
+
+	butt_estudiantes.classList.remove("active");
+	butt_profesores.classList.add("active");	
+
+	let x = document.getElementById("estudiantes");
 	x.style.display = "none";
 	$("#profesores").fadeIn("slow");
 }
 function showPlaneacion() {
-	var x = document.getElementById("anexos");
+	let butt_planeacion = document.getElementById("butt_planeacion");
+	let butt_anexos = document.getElementById("butt_anexos");	
+	let butt_codigofuente = document.getElementById("butt_codigofuente");
+
+	butt_planeacion.classList.add("active");
+	butt_anexos.classList.remove("active");
+	butt_codigofuente.classList.remove("active");
+
+	let x = document.getElementById("anexos");
 	x.style.display = "none";
-	var y = document.getElementById("codigo");
+	let y = document.getElementById("codigo");
 	x.style.display = "none";
 	$("#planeacion").fadeIn("slow");
 }
 function showAnexos() {
-	var x = document.getElementById("planeacion");
+	let butt_planeacion = document.getElementById("butt_planeacion");
+	let butt_anexos = document.getElementById("butt_anexos");
+	let butt_codigofuente = document.getElementById("butt_codigofuente");
+
+	butt_planeacion.classList.remove("active");
+	butt_anexos.classList.add("active");
+	butt_codigofuente.classList.remove("active");
+
+	let x = document.getElementById("planeacion");
 	x.style.display = "none";
-	var y = document.getElementById("codigo");
+	let y = document.getElementById("codigo");
 	x.style.display = "none";
 	$("#anexos").fadeIn("slow");
+	showSPMP();
 }
 function showCodigo() {
-	var x = document.getElementById("planeacion");
+	let butt_planeacion = document.getElementById("butt_planeacion");
+	let butt_anexos = document.getElementById("butt_anexos");
+	let butt_codigofuente = document.getElementById("butt_codigofuente");
+
+	butt_planeacion.classList.remove("active");
+	butt_anexos.classList.remove("active");
+	butt_codigofuente.classList.add("active");
+
+	let x = document.getElementById("planeacion");
 	x.style.display = "none";
-	var y = document.getElementById("anexos");
+	let y = document.getElementById("anexos");
 	y.style.display = "none";
 	$("#codigo").fadeIn("slow");
 }
 function showSPMP() {
-	var x = document.getElementById("srs");
+	let butt_spmp = document.getElementById("butt_spmp");		
+	let butt_srs = document.getElementById("butt_srs");	
+
+	butt_spmp.classList.add("active");	
+	butt_srs.classList.remove("active");
+
+	let x = document.getElementById("srs");
 	x.style.display = "none";
 	$("#spmp").fadeIn("slow");
 }
 function showSRS() {
-	var x = document.getElementById("spmp");
+	let butt_spmp = document.getElementById("butt_spmp");
+	let butt_srs = document.getElementById("butt_srs");
+
+	butt_spmp.classList.remove("active");
+	butt_srs.classList.add("active");
+
+	let x = document.getElementById("spmp");
 	x.style.display = "none";
 	$("#srs").fadeIn("slow");
 }
 function showUsabilidad() {
-	var x = document.getElementById("extensibilidad");
+	let butt_usabilidad = document.getElementById("butt_usabilidad");
+	let butt_extensibilidad = document.getElementById("butt_extensibilidad");
+	let butt_portabilidad = document.getElementById("butt_portabilidad");
+	
+	butt_usabilidad.classList.add("active");
+	butt_extensibilidad.classList.remove("active");
+	butt_portabilidad.classList.remove("active");
+	
+	let x = document.getElementById("extensibilidad");
 	x.style.display = "none";
-	var y = document.getElementById("portabilidad");
+	let y = document.getElementById("portabilidad");
 	x.style.display = "none";
 	$("#usabilidad").fadeIn("slow");
 }
 function showExtensibilidad() {
-	var x = document.getElementById("usabilidad");
+	let butt_usabilidad = document.getElementById("butt_usabilidad");
+	let butt_extensibilidad = document.getElementById("butt_extensibilidad");
+	let butt_portabilidad = document.getElementById("butt_portabilidad");
+
+	butt_usabilidad.classList.remove("active");
+	butt_extensibilidad.classList.add("active");
+	butt_portabilidad.classList.remove("active");
+
+	let x = document.getElementById("usabilidad");
 	x.style.display = "none";
-	var y = document.getElementById("portabilidad");
+	let y = document.getElementById("portabilidad");
 	x.style.display = "none";
 	$("#extensibilidad").fadeIn("slow");
 }
 function showPortabilidad() {
-	var x = document.getElementById("usabilidad");
+	let butt_usabilidad = document.getElementById("butt_usabilidad");
+	let butt_extensibilidad = document.getElementById("butt_extensibilidad");
+	let butt_portabilidad = document.getElementById("butt_portabilidad");
+
+	butt_usabilidad.classList.remove("active");
+	butt_extensibilidad.classList.remove("active");
+	butt_portabilidad.classList.add("active");
+
+	let x = document.getElementById("usabilidad");
 	x.style.display = "none";
-	var y = document.getElementById("extensibilidad");
+	let y = document.getElementById("extensibilidad");
 	y.style.display = "none";
 	$("#portabilidad").fadeIn("slow");
 }
